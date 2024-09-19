@@ -1,0 +1,10 @@
+
+
+<h3>Chat Bot Support</h3>
+
+<div class="chat-container">
+   
+    <input type="text" @bind-value="userInput" @bind-value:event="oninput" placeholder="Type your message..." />
+    <button @onclick="SendMessage">Send</button>
+</div>
+
