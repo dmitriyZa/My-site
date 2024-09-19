@@ -1,58 +1,93 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Визитка</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            margin: auto;
-        }
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-        }
-        p {
-            text-align: center;
-        }
-        .projects {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #4CAF50;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Мои Проекты на GitHub</h1>
-        <p>Привет! Я разработчик и вот некоторые из моих проектов:</p>
-        <ul class="projects">
-            <li><a href="https://github.com/ваш_логин/проект1">Проект 1</a></li>
-            <li><a href="https://github.com/ваш_логин/проект2">Проект 2</a></li>
-            <li><a href="https://github.com/ваш_логин/проект3">Проект 3</a></li>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">  
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Dmitry Zagary</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="my-photo.jfif" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Dmitry Zagary</h1>
+      <h3 class="header__subtitle">C# developer</h3>
+    </header>
+
+    <main>
+
+      <section class="links">
+        <h2 class="links__header">My contacts</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Telegram</p>
+            <a class="linsk__link" href="http://t.me/dzagariy">@dzagariy</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Email</p>
+            <a class="linsk__link" href="mailto:dzagariy@gmail.com"
+              >dzagariy@gmail.com</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">GitHub</p>
+            <a class="linsk__link" href="https://github.com/dzagariy">github.com/dzagariy</a>
+          </li>       
+          
         </ul>
-        <p>Спасибо за внимание!</p>
-    </div>
-</body>
+      </section>
+          
+     
+      <section class="links">
+        <h2 class="links__header">My work portfolio</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Сheck lists</p>
+            <a class="linsk__link" href="https://miro.com/app/board/uXjVPBkh9Mw=/?share_link_id=572698596604">miro</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2 class="links__header">My resumes</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Resume</p>
+            <a class="linsk__link" href="https://spb.hh.ru/resume/8cb0904dff0bd210070039ed1f4a7a366d6866">HH</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">CV</p>
+            <a class="linsk__link" href="https://registry.jsonresume.org/tacitcoast">JSON</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2 class="links__header">My training and development</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Hard Skills</p>
+          </li>
+          <li class="links__link">
+            <a class="linsk__link" href="https://github.com/tacitcoast/QA-Guru">Python testing automation - QA.Guru (70h)</a>
+          </li>
+          <li class="links__link">
+            <a class="linsk__link" href="https://github.com/tacitcoast/QA-Studio">Manual testing - QA Studio (80h)</a>
+          </li>
+          <li class="links__link">
+            <a class="linsk__link" href="https://learn.epam.com/detailsPage?id=a4a1b6e2-4e51-455d-ac5b-e60f23d4ed69&source=EXTERNAL_COURSE">Software Testing - Base Course Svyatoslav Kulikov (110h)</a>
+          </li>
+          
+
+
+        </ul>
+      </section>
+
+    </main>   
+    
+  </body>
 </html>
